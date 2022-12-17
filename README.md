@@ -1,7 +1,7 @@
 # OpenAi-DALL-E
 1 - Clone this repo
 now navigate into the Project Repository
-$ cd OpenAi-DALL-E
+$ cd OpenAi-DALL-E    -------
 2 - Install node modules 
 $ npm install
 3 - Create .env file and place your Private Api Key there like:
