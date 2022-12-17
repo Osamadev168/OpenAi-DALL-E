@@ -2,7 +2,7 @@
 1 - Clone this repo and
 navigate into the Project Repository
 $ cd OpenAi-DALL-E    -------
-2 - Install node modules 
+2 - Install node modules (do this in both root directory and client directory)
 $ npm install
 3 - Create .env file and place your Private Api Key there like:
 PORT = port number here
