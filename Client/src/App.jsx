@@ -18,7 +18,6 @@ export default function App() {
   async function onSubmit(e) {
     e.preventDefault();
     setResult("");
-
     setProgress(true);
     const response = await fetch("http://localhost:4000/genImage", {
       method: "POST",
@@ -29,10 +28,8 @@ export default function App() {
     });
     const data = await response.json();
     setResult(data.data);
-
     setText("");
     setProgress(false);
-    console.log(size, data);
   }
   return (
     <div style={{ backgroundColor: "#808080", borderRadius: 20 }}>
@@ -41,7 +38,7 @@ export default function App() {
           Open AI DALL-E
         </h3>
 
-        <FormControl style={{}}>
+        <FormControl>
           <TextField
             id="outlined-basic"
             label="Enter Discription"

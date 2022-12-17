@@ -7,7 +7,7 @@ const configuration = new Configuration({
 const opeai = new OpenAIApi(configuration);
 
 export const Controller = async (req, res) => {
-  const { prompt, size, n } = req.body;
+  const { prompt, size } = req.body;
   try {
     const response = await opeai.createImage({
       prompt,
