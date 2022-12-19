@@ -19,6 +19,11 @@ export const Controller = async (req, res) => {
       sucess: true,
       data: ImageUrl,
     });
+
+    res.status(200).json({
+      sucess: true,
+      data: image,
+    });
   } catch (e) {
     console.log(e);
   }
