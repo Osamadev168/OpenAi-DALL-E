@@ -11,10 +11,10 @@ App.use(express.urlencoded({ extended: true }));
 App.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-App.use(cors({ origin: ["http://localhost:5174", "http://127.0.0.1:5174"] }));
+// App.use(cors({ origin: ["http://localhost:5174", "http://127.0.0.1:5174"] }));
 App.use(function (req, res, next) {
   // Website you wish to allow to connect
-  res.setHeader("Access-Control-Allow-Origin", "http://127.0.0.1:5174");
+  res.setHeader("Access-Control-Allow-Origin", "*");
 
   // Request methods you wish to allow
   res.setHeader(
