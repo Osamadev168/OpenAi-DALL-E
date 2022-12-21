@@ -15,5 +15,5 @@ App.use(cors());
 App.use(bodyParser.json());
 App.use("/", router);
 App.get("/", (req, res) => {
-  res.json("mmmkn");
+  res.json("this is base url");
 });
