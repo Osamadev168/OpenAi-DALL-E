@@ -1,6 +1,6 @@
 # OpenAi-DALL-E
 1 - Clone this repo and
-navigate into the Project Repository
+navigate into the project directory
 $ cd OpenAi-DALL-E    -------
 2 - Install node modules (do this in both root directory and client directory)
 $ npm install
