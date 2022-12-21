@@ -21,20 +21,24 @@ export default function App() {
     e.preventDefault();
     setResult("");
     setProgress(true);
-    const response = await fetch(
-      "https://openai-dall-e-production.up.railway.app/genImage",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ prompt: text, size: size }),
-      }
-    );
-    const data = await response.json();
-    setResult(data.data);
-    setText("");
-    setProgress(false);
+    try {
+      const response = await fetch(
+        "https://openai-dall-e-production.up.railway.app/genImage",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ prompt: text, size: size }),
+        }
+      );
+      const data = await response.json();
+      setResult(data.data);
+      setText("");
+      setProgress(false);
+    } catch (e) {
+      console.log(e);
+    }
   }
   return (
     <div style={{ textAlign: "center" }}>
