@@ -23,7 +23,7 @@ export default function App() {
     setProgress(true);
     try {
       const response = await fetch(
-        "https://openai-dall-e-production.up.railway.app/genImage",
+        "https://openai-dall-e-production.up.railway.app/",
         {
           method: "POST",
           headers: {
